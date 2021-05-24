@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/design1"
+    tools:context=".Activity.ContactActivity">
+
+    <RelativeLayout
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/square"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:text="Contact us at- 9506934412"
+            android:textColor="#32E0C4"/>
+        <Button
+            android:id="@+id/mail_us_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:layout_centerInParent="true"
+            android:text="Mail Us"
+            android:textSize="20sp"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

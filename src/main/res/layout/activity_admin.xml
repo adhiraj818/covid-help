@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/design1"
+    tools:context=".Activity.AdminActivity">
+
+
+    <EditText
+        android:id="@+id/city"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/rectangle"
+    android:hint="    please enter City"
+        android:layout_above="@+id/place"
+        android:layout_marginBottom="20dp"
+    android:inputType="text"
+    android:textColor="#32E0C4"
+    android:textColorHint="#32E0C4"
+    android:foregroundTint="#32E0C4"
+    android:ems="10"
+    />
+    <EditText
+        android:id="@+id/place"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/rectangle"
+    android:hint="    please enter place / hospital name"
+        android:layout_above="@+id/oxygen"
+        android:layout_marginBottom="20dp"
+    android:inputType="text"
+    android:textColor="#32E0C4"
+    android:textColorHint="#32E0C4"
+    android:foregroundTint="#32E0C4"
+    android:ems="10"
+    />
+
+    <EditText
+    android:id="@+id/oxygen"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/rectangle"
+    android:hint="    If oxygen available type yes"
+    android:inputType="text"
+        android:layout_above="@+id/bed_count"
+    android:textColor="#32E0C4"
+    android:textColorHint="#32E0C4"
+    android:foregroundTint="#32E0C4"
+    android:ems="10"
+    />
+
+    <EditText
+        android:id="@+id/bed_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rectangle"
+        android:hint="    please enter beds count"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:textColor="#32E0C4"
+        android:textColorHint="#32E0C4"
+        android:foregroundTint="#32E0C4"
+        android:ems="10"
+        />
+
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectangle"
+        android:hint="    Provide contact no."
+        android:layout_below="@+id/bed_count"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:textColor="#32E0C4"
+        android:textColorHint="#32E0C4"
+        android:foregroundTint="#32E0C4"
+        android:ems="10"
+        />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectangle"
+        android:hint="    please enter current date"
+        android:layout_below="@+id/contact"
+        android:layout_marginTop="20dp"
+        android:inputType="date"
+        android:textColor="#32E0C4"
+        android:textColorHint="#32E0C4"
+        android:foregroundTint="#32E0C4"
+        android:ems="10"
+        />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/date"
+        android:text="Submit"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textColor="#393E46"
+        android:layout_marginTop="20dp"
+        />
+
+
+</RelativeLayout>

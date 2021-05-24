@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/design1"
+    tools:openDrawer="start"
+    android:clickable="true"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.DashBoardActivity">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_views"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/nav_menu"
+        android:layout_gravity="start"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:background="@drawable/navdesign"
+        app:headerLayout="@layout/header_layout"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:itemTextColor="#32E0C4"
+        app:itemIconTint="#32E0C4"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/searchBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:iconifiedByDefault="true"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/menu_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/menu_anim"
+        />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/bottom_image"
+        android:layout_marginTop="150dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:id="@+id/beds_availability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/square"
+                >
+                <ImageView
+                    android:id="@+id/beds_availability_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/beds_availabilty"
+                    android:layout_alignParentTop="true"
+                    />
+                <ImageView
+                    android:id="@+id/bed_image"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/bed"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    />
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/green_tick"
+                        android:layout_below="@+id/beds_availability_image"
+                        android:layout_marginLeft="190dp"
+                        android:layout_marginTop="70dp"
+                        />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/oxygen_availability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/square"
+                android:layout_marginTop="10dp"
+                >
+                <ImageView
+                    android:id="@+id/oxygen_availability_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/o2_availabilty"
+                    android:layout_alignParentTop="true"
+                    />
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/cylinder_oxygen"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="140dp"
+                    />
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/green_tick"
+                    android:layout_below="@+id/oxygen_availability_image"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginLeft="10dp"
+                    />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+</ScrollView>
+    <RelativeLayout
+        android:id="@+id/bottom_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/covid_image"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
+            android:id="@+id/learn_more-button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/learn_more"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="40dp"
+            />
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
