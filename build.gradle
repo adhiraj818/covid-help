@@ -6,7 +6,7 @@ android {
     buildToolsVersion "30.0.1"
 
     defaultConfig {
-        applicationId "com.example.covidhelp"
+        applicationId "com.adhiraj.covidhelp"
         minSdkVersion 19
         targetSdkVersion 29
         versionCode 1

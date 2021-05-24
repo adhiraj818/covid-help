@@ -62,13 +62,13 @@
         />
 
     <TextView
-        android:id="@+id/forget_password"
+        android:id="@+id/forgot_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/login"
         android:layout_marginTop="10dp"
-        android:text="Foreget Password"
+        android:text="Forgot Password"
         android:textColor="#32E0C4"
         android:textStyle="bold"
         />
@@ -78,7 +78,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/forget_password"
+        android:layout_below="@+id/forgot_password"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/progress_bar"
