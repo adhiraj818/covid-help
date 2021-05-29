@@ -13,6 +13,16 @@
             android:visible="false"
             />
 
+        <item
+            android:id="@+id/tiffin"
+            android:title="Tiffin Services"
+            android:icon="@drawable/tiffin"
+            />
+        <item android:id="@+id/meds"
+            android:title="Medicine Services"
+            android:icon="@drawable/pills"
+            />
+
 
 
         <item android:id="@+id/about"

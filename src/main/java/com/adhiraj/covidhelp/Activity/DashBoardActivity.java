@@ -176,6 +176,10 @@ public class DashBoardActivity extends AppCompatActivity implements NavigationVi
 
             case R.id.admin: startActivity(new Intent(getApplicationContext(),AdminActivity.class)); return true;
 
+            case R.id.tiffin: startActivity(new Intent(getApplicationContext(),Tiffin_data_Activity.class)); return true;
+
+            case R.id.meds: startActivity(new Intent(getApplicationContext(),medicinesActivity.class)); return true;
+
             case R.id.contact: startActivity(new Intent(getApplicationContext(),ContactActivity.class)); return true;
 
             case R.id.actions : if(menu.findItem(R.id.logout).isVisible() == false){

@@ -126,4 +126,11 @@ These terms and conditions are effective as of 2025-05-24
 \n\n**Contact Us**\n\n
 
 If you have any questions or suggestions about my Terms and Conditions, do not hesitate to contact me at adhiraj818@gmail.com.</string>
+
+    <string-array name="service">
+        <item>Select a service</item>
+        <item>tiffin</item>
+        <item>medicine</item>
+    </string-array>
+
 </resources>

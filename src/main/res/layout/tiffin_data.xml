@@ -10,72 +10,50 @@
         app:cardBackgroundColor="#32E0C4"
         app:cardCornerRadius="25dp"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         >
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             >
             <TextView
-                android:id="@+id/hosp_name"
+                android:id="@+id/provider_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SCS Hospital"
-                android:textColor="#4C4646"
+                android:layout_marginTop="10dp"
                 android:layout_marginHorizontal="20dp"
+                android:text="ADHIRAJ BHADAURIYA"
+                android:textColor="#4C4646"
                 android:layout_centerHorizontal="true"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 />
 
             <TextView
-                android:id="@+id/beds_count"
+                android:id="@+id/address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:layout_below="@id/hosp_name"
-                android:text="Beds Available : 50"
-                android:textSize="15dp"
+                android:layout_below="@id/provider_name"
+                android:text="Address/city : 473 ludhiyana road"
+                android:textSize="20dp"
                 android:textStyle="bold"
                 android:layout_marginTop="10dp"
                 android:layout_marginStart="10dp"
                 />
-            <TextView
-                android:id="@+id/oxygen_avail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_below="@id/beds_count"
-                android:text="oxygen Available : yes"
-                android:textSize="15dp"
-                android:textStyle="bold"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="10dp"
-                />
+
             <TextView
                 android:id="@+id/contact"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:layout_below="@id/oxygen_avail"
+                android:layout_below="@id/address"
                 android:text="Contact no : 654821678"
-                android:textSize="15dp"
+                android:textSize="20dp"
                 android:textStyle="bold"
                 android:layout_marginTop="10dp"
                 android:layout_marginStart="10dp"
-                />
-            <TextView
-                android:id="@+id/date"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_below="@id/contact"
-                android:text="date : 22/05/21"
-                android:textSize="15dp"
-                android:textStyle="bold"
-                android:layout_marginTop="10dp"
                 android:layout_marginBottom="20dp"
-                android:layout_marginStart="10dp"
                 />
 
         </RelativeLayout>

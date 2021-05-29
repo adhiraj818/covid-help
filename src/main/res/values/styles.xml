@@ -5,6 +5,18 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:spinnerItemStyle">@style/mySpinnerItemStyle</item>
+    </style>
+
+    <style name="mySpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="mySpinnerItemStyle2" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:background">#8ef4b1</item>
+        <item name="android:textColor">#ffff</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
 </resources>

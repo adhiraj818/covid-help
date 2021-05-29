@@ -18,6 +18,7 @@ import java.util.ArrayList;
 import static android.content.ContentValues.TAG;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
+
     private ArrayList<String> mhospNames = new ArrayList<String>();
     private ArrayList<String> mbeds_count = new ArrayList<String>();
     private ArrayList<String> moxygen = new ArrayList<String>();

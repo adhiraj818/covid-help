@@ -21,7 +21,7 @@ import java.util.Map;
 public class AdminActivity extends AppCompatActivity {
 
     EditText city , beds_count , contact , oxygen , date , hosp_name;
-    Button submit;
+    Button submit , next;
 
     FirebaseFirestore fStore;
 
@@ -39,6 +39,7 @@ public class AdminActivity extends AppCompatActivity {
         date = findViewById(R.id.date);
         hosp_name = findViewById(R.id.place);
         submit = findViewById(R.id.submit);
+        next = findViewById(R.id.next);
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +48,17 @@ public class AdminActivity extends AppCompatActivity {
                 Animation animation = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.bounce);
                 submit.startAnimation(animation);
                 submitData();
+
+            }
+        });
+
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Animation animation = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.bounce);
+                next.startAnimation(animation);
+                startActivity(new Intent(getApplicationContext(), Tiffin_Activity.class));
 
             }
         });
